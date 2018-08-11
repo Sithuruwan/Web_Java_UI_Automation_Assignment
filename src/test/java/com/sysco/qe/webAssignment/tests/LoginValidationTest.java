@@ -23,7 +23,7 @@ public class LoginValidationTest extends TestBase {
     }
 
 
-    @Test(description = "BDG-001", alwaysRun = true, priority = 2)
+    @Test(description = "BDG-002", alwaysRun = true, priority = 2)
     public void verifyValidEmailAndPassword() throws Exception {
         LoginValidation.enterValidEmailAndValidPassword(Data.validEmail,Data.validPassword);
         LoginValidation.clickLogin();
@@ -34,7 +34,7 @@ public class LoginValidationTest extends TestBase {
 
     }
 
-    @Test(description = "BDG-002", alwaysRun = true, priority = 1)
+    @Test(description = "BDG-003", alwaysRun = true, priority = 1)
     public static void verifyInvalidEmailAndValidPassword() throws Exception{
         LoginValidation.enterInvalidEmailAndValidPassword(Data.invalidEmail,Data.validPassword);
         LoginValidation.clickLogin();

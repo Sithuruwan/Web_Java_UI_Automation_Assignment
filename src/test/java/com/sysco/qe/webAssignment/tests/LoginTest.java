@@ -24,7 +24,7 @@ public class LoginTest extends TestBase {
         Login.quiteDriver();
     }
 
-    @Test
+    @Test (description = "BDG-001", alwaysRun = true)
     public void testLogin() throws Exception {
         Login.loadLoginPage();
         Login.setDate();

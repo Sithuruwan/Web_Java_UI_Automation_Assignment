@@ -20,7 +20,7 @@ public class MyAccountCreationTest extends TestBase {
         Login.quiteDriver();
     }
 
-    @Test
+    @Test (description = "BDG-004")
     public void testMyAccountCreation() throws Exception {
         Login.login();
         Home.navigateToMyAccount();

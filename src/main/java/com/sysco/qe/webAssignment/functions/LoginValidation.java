@@ -26,4 +26,10 @@ public class LoginValidation {
     public static void clickLogin(){
         ogmloginValidation.clickLogin();
     }
+
+    public static void loginToAccount(String validEmail,String validPassword){
+        LoginValidation.enterValidEmailAndValidPassword(validEmail,validPassword);
+        LoginValidation.clickLogin();
+
+    }
 }

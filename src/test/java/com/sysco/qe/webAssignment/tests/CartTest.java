@@ -26,10 +26,9 @@ public class CartTest extends TestBase {
         SoftAssert softAssert = new SoftAssert();
 
         Cart.clickCartIcon();
-        Cart.clickRemoveLink();
+        //Cart.clickRemoveLink();
         Cart.clickCartIcon();
         softAssert.assertEquals(Cart.isDisplayedZeroInCart(),"0","Expected value does not displayed");
-
         softAssert.assertAll();
     }
 

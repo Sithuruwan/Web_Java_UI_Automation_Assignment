@@ -28,6 +28,9 @@ public class LoginPage extends PageBase {
     private By btnCustominvalidYear = By.xpath("/html/body/div[1]/div[2]/form/div[8]/div[3]/div/select[3]/option[2]");
     private By btnCustomCountry = By.xpath("/html/body/div[1]/div[2]/form/div[15]/ul/li[1]/select/option[1]");
 
+    //private By drpDate = By.xpath("");
+   // private By drpMonth = By.xpath("");
+    //private By drpYear = By.xpath("");
 
 
    public void quitDriver() {

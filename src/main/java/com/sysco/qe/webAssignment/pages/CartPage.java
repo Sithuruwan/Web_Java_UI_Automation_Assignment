@@ -8,9 +8,10 @@ import java.awt.event.KeyEvent;
 
 public class CartPage extends PageBase {
 
-    private By icnCart = By.id("cartHeader");
+    private static By icnCart = By.id("cartHeader");
     private static By icnCartQuantity =By.xpath("//li[2]/ul/li[3]/div/div[1]/span[2]");
     private static By icnCartZeroValue =By.xpath("//*[@id=\"quick-access-list\"]/li[2]/ul/li[3]/div/div[1]/span[2]");
+//    private static By lnkRemove =By.xpath("//a[@title='Remove']");
     private static By lnkRemove =By.xpath("//a[@title='Remove']");
     private static By lnkProductCategory =By.xpath("//div[@id='nav-wrapper']/div/ul[1]/li[@class='link-product']");
     private static By lnkRoyalLiqueur =By.xpath("//div[4]/div[@class='megamenu-left']/div[1]/ul//ul[@class='level0']//a[@href='https://www.bundabergrum.com.au/all-bottles/royal-liqueur-flavoured']");
@@ -23,7 +24,7 @@ public class CartPage extends PageBase {
     private static By txtName =By.xpath("//h2/a[@href='https://www.bundabergrum.com.au/royal-liqueur-mixed-pack-4']");
     private static By btnProceedToCheckOut =By.xpath("//div[2]/div[3]/div[2]/div/div[1]/div[1]/div/ul/li[2]/button");
     private static By txtFirstName =By.id("billing:firstname");
-    String value ="value";
+    private String value ="value";
     private static By txtLastName =By.id("billing:lastname");
     private static By txtAddress =By.id("billing:street1");
     private static By txtContactNumber =By.id("billing:telephone");
@@ -51,9 +52,9 @@ public class CartPage extends PageBase {
         int x = 0;
         while (Integer.parseInt(syscoLabUIOgm.getText(icnCartQuantity)) != 0) {
             syscoLabUIOgm.click(icnCart);
-            syscoLabUIOgm.sleep(2);
+            syscoLabUIOgm.sleep(4);
             syscoLabUIOgm.click(lnkRemove);
-            syscoLabUIOgm.sleep(1);
+            syscoLabUIOgm.sleep(4);
             syscoLabUIOgm.isAlertDisplayed();
             syscoLabUIOgm.sleep(2);
             syscoLabUIOgm.clickOkInWindowsAlert();

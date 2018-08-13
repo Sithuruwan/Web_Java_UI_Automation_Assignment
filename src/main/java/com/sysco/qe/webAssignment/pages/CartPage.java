@@ -61,6 +61,26 @@ public class CartPage extends PageBase {
             syscoLabUIOgm.sleep(2);
         }
     }
+/*
+    public boolean isItemPresent(){
+        syscoLabUIOgm.click(icnCart);
+        syscoLabUIOgm.sleep(3);
+        return syscoLabUIOgm.isDisplayed(lnkRemove);
+
+    }
+
+    public void clearCart(){
+
+        while (isItemPresent()){
+            syscoLabUIOgm.click(lnkRemove);
+            syscoLabUIOgm.sleep(3);
+        }
+
+    }
+*/
+
+
+
     public String isDisplayedZeroInCart() {
         return (syscoLabUIOgm.getText(icnCartZeroValue));
     }

@@ -12,6 +12,11 @@ public class Cart {
     public static void clickRemoveLink() {
         cartPage.clickRemoveLink();
     }
+
+//    public static void clearCartItems(){
+//        cartPage.clearCart();
+//    }
+
     public static String isDisplayedZeroInCart() {
         return  cartPage.isDisplayedZeroInCart();
     }

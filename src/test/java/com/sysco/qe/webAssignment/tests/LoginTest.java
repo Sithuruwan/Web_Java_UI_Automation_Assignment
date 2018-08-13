@@ -16,7 +16,7 @@ public class LoginTest extends TestBase {
 
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        iTestContext.setAttribute("feature", "Login - ValidLogin");
+        iTestContext.setAttribute("feature", "Bundabergrum_AnuradhaS - Checkout_AnuradhaS");
     }
 
     @AfterClass
